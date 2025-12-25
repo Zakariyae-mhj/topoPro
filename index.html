@@ -615,4 +615,13 @@
         map.on('mousemove', e => { try { let p = proj4("EPSG:4326", currentZone, [e.latlng.lng, e.latlng.lat]); document.getElementById('bottom-bar').innerHTML = `X: ${p[0].toFixed(0)} | Y: ${p[1].toFixed(0)} | Lat: ${e.latlng.lat.toFixed(4)}`; } catch(x){} });
     </script>
 </body>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/AASTopo/sw.js')
+        .then(() => console.log('Service Worker Registered ✅'))
+        .catch((err) => console.log('SW Failed ❌', err));
+    });
+  }
+</script>
 </html>
