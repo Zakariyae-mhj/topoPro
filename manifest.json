@@ -1,21 +1,45 @@
 {
+  "id": "/AASTopo/",
   "name": "ZASTopo Pro",
   "short_name": "ZASTopo",
   "start_url": "/AASTopo/",
+  "scope": "/AASTopo/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#2563eb",
+  "description": "تطبيق الطبوغرافيا ونظم المعلومات الجغرافية - ZASTopo Pro. يتيح لك الرسم على الخرائط، حساب المساحات، واستخراج المقاطع التضاريسية.",
+  "lang": "ar",
+  "dir": "rtl",
   "orientation": "portrait-primary",
+  "categories": ["productivity", "education", "utilities"],
   "icons": [
     {
       "src": "https://i.imgur.com/rP6Yotb.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "https://i.imgur.com/rP6Yotb.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://i.imgur.com/rP6Yotb.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "واجهة التطبيق الرئيسية"
+    },
+    {
+      "src": "https://i.imgur.com/rP6Yotb.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "العمل على الهاتف"
     }
   ]
 }
